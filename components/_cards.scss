@@ -1,0 +1,8 @@
+@use "../abstracts/mixins" as mixins;
+
+.card {
+  @include mixins.box-style;
+
+  // Nesting: quy tắc cho tiêu đề nằm trong Card
+  h2 { margin-top: 0; }
+}

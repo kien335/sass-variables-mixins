@@ -1,0 +1,17 @@
+@use "variables" as vars;
+
+// Mixin cho nút bấm, tham số cho phép thay đổi màu nền
+@mixin button-style($bg-color) {
+  background: $bg-color;
+  color: white;
+  padding: vars.$padding-standard;
+  border-radius: 5px;
+}
+
+// Mixin định dạng thẻ nội dung
+@mixin box-style {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: vars.$box-shadow-default;
+}

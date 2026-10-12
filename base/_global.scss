@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as vars;
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: vars.$text-color;
+  background: #f4f4f4;
+  line-height: 1.6;
+}

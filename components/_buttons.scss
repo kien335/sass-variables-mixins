@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.button {
+  @include mixins.button-style(vars.$primary-color);
+  display: inline-block;
+  text-decoration: none;
+  transition: opacity 0.2s;
+
+  // Nesting: trạng thái hover nằm trong .button
+  &:hover { opacity: 0.85; }
+}
